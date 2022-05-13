@@ -2,13 +2,13 @@
 // Op die mommenten komt er een class op de body.
 sounds = [
 	0, // beginmuziek
-	9,	// Alarm 1
-	12, // Hight Noice
-	16.5, // Alarm 2
-	23, // Badguy talks
-	25.8,
-	31,
-	32,
-	34,
+	9,	// Heavy Alarm
+	12, // High Noice
+	16, // Low Alarm
+	23, // Stranger talks
+	25, // Low Alarm repeat
+	31, // Low Alarm repeat 2x
+	33, // Hoge pieptoon begint
+	38,
 	86
 ];

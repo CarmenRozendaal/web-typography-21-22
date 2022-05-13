@@ -21,7 +21,7 @@ body {
     transition: .5s;
     position: absolute;
     text-align: left;
-	bottom: 5em;
+	bottom: 4em;
     width: 99%;
 }
 
@@ -59,7 +59,7 @@ iframe {
     color: white;
 }
 
-/* Agent K */
+/* Officer K */
 .voice2::before {
     content: "Officer K: ";
     font-family: "Brenner Sans";
@@ -74,19 +74,19 @@ iframe {
     color: white;
 }
 
-/* Voorbijganger */
+/* Stranger */
 .voice3::before {
 	content: "Stranger: ";
-	font-family:"Brenner Sans";
-	color: darkred;
+	font-family:"Brenner Sans Condensed";
+	color: red;
 	font-weight: bold;
 }
 
 .voice3 {
-    font-family: "Brenner Sans";
+    font-family: "Brenner Sans Condensed";
 	font-weight: normal;
-    font-size: 1em;
-    color: red;
+    font-size: 2em;
+    color: white;
 }
 
 /* Collega */
@@ -137,11 +137,7 @@ iframe {
   }
 
   .sound0 #neonlights div:nth-of-type(1) {
-  animation-name:movinglightPink;
-  animation-duration:2.5s;
-  animation-delay:0s;
-  animation-fill-mode:forwards;
-  animation-iteration-count: 2;
+  animation:movinglightPink 2.2s 0s forwards 2;
   }
 
   .sound0 #neonlights div:nth-of-type(2) {
@@ -167,11 +163,7 @@ iframe {
 }
 
 .sound0 #neonlights div:nth-of-type(2) {
-	animation-name:movinglightGreen;
-	animation-duration:2.5s;
-	animation-delay:0s;
-	animation-fill-mode:forwards;
-	animation-iteration-count: 2;
+	animation:movinglightGreen 2.2s 0s forwards 2;
 	}
 
 
@@ -184,28 +176,24 @@ iframe {
 .p0.on span:first-of-type {
     opacity: 1;
     transition: 0s;
-    /* font-weight: 200; */
 }
 
 .p0.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .4s;
     margin-right: -.25em;
-    /* font-weight: 200; */
 }
 
 .p0.on span:nth-of-type(3) {
     opacity: 1;
     transition: 0s .5s;
     margin-right: -.25em;
-    /* font-weight: 200; */
 }
 
 .p0.on span:nth-of-type(4) {
     opacity: 1;
     transition: 0s .7s;
     margin-right: -.25em;
-    /* font-weight: 200; */
 }
 
 .p0.on span:nth-of-type(5) {
@@ -251,27 +239,24 @@ iframe {
     opacity: 1;
     transition: 0s 3.7s;
     font-family: "brenner mono bold";
-	font-size: 1em;
-	color:lightblue;
+	font-size: 1.2em;
+	color:rgb(47, 230, 135);
 }
 
 
 /* alarm toon */
 .sound1::before {
 	content: "ALARM ⚠️";
-	position: absolute;	
-	top: 2em;
+	position: absolute;
+	text-align: center;	
+	top: 1.5em;
 	color: yellow;
 	font-size: 2em;
-	transition: 1s;
-}
-
-.sound1::after {
-	content: "";
+	transition: .5s;
 }
 
 .sound1 {
-	background-color: darkred;
+	background-color:darkred;
 }
 
 .sound1 iframe {
@@ -284,7 +269,7 @@ iframe {
 	}
 
 	50% {
-		transform: scale(1.5);
+		transform: scale(1.3);
 	}
 
 	100% {
@@ -292,35 +277,133 @@ iframe {
 	}
 }
 
-.sound2::before{
-	content: "High Noice";
-	transition: 1s;
+ .sound2::before{
+	content: "SIRENE 🚨";
+	position: absolute;
+	text-align: center;	
+	top: 1.5em;
+	color: white;
+	font-size: 2em;
+	transition: .5s;
 }
 
 .sound2 {
-	background-color:green;
+	background-color:#08233b;
+	animation: Sirenelicht 1s linear;
 }
 
+@keyframes Sirenelicht {
+    10% {
+        background-color: red;
+    }
+
+    45% {
+        background-color: blue;
+    }
+
+    90% {
+        background-color: red;
+    }
+}
+
+
 .sound3::before {
-	content:"ALARM 2";
-	transition: 1s;
+	content: "ALARM ⚠️";
+	position: absolute;	
+	top: 1.5em;
+	color: yellow;
+	font-size: 2em;
+	transition: .5s;
 }
 
 .sound3 {
-	background-color:#08233b;
+	background-color:darkred;
 }
 
 .sound4::before {
-	content: "🗣:%#&";
-	position: absolute;	
+	content: "🗣";
+	position: absolute;
+    text-align: center;	
 	top: 2em;
 	color: red;
-	font-size: 2em;
-	transition: 1s;
+	font-size: 3em;
+	transition: .5s;
 }
 
 .sound4 {
-	background-color:#08233b;
+	background-color: black;
+}
+
+@keyframes shake{
+	0% {
+		transform: translate(0);
+	}
+	20%,
+	40%,
+	60%,
+	80%{
+		transform: translate(.9em);
+	}
+	10%,
+	30%,
+	50%{
+		transform: translate(-.2em);
+	}
+	70%,
+	100%{
+		transform: translate(0);
+	}
+}
+
+.sound3 , .sound5 , .sound6 iframe {
+	animation: shake .8s ease-in;
+}
+
+
+.sound5::before {
+	content: "ALARM again ⚠️⚠️";
+	position: absolute;	
+	top: 1.5em;
+    text-align: center;
+	color: yellow;
+	font-size: 2em;
+	transition: .5s;
+	border: none;
+}
+
+.sound5 {
+	background-color: darkred;
+}
+
+.sound6:before {
+	content: "ALARM again ⚠️⚠️⚠️";
+	position: absolute;	
+	top: 1.5em;
+    text-align: center;	
+	color: yellow;
+	font-size: 2em;
+	transition: .5s;
+	border: none;
+}
+
+.sound6 {
+	background-color: darkred;
+}
+
+
+.sound7:before {
+	content:"{ Upcoming Peep tone }";
+	transition: .5s;
+	color:orangered;
+	position: absolute;
+    text-align: center;	
+	top: 2em;
+    width: 99%;
+	border:none;
+}
+
+.sound7 {
+	background-color: #08233b;
 }
 
 
