@@ -34,10 +34,9 @@ Ook ga ik de belangrijke geluiden, die essentieel zijn in de film, visueel maken
 <details>
   <summary>Mijn proces</summary>
 
-  ### Bevinding 1:
   hier komt nog tekst.
 
-  <img src="" width="375px" alt="schets">
+
 
 </details>
 

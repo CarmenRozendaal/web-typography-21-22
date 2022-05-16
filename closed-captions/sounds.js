@@ -9,10 +9,9 @@ sounds = [
 	25, // Low Alarm repeat 2x
 	31, // Low Alarm repeat 3x
 	33, // Pieptoon begint
-	38, // Pieptoon wordt hoger
-	45, // Pieptoon stopt
-	60, // Pieptoon begint weer
-	70, // Pieptoon wordt heftiger
-	86, // Notificatie
-	100 // Pieptoon stopt
+	40, // Pieptoon wordt hoger
+	75, // Pieptoon stopt
+	90, // Pieptoon start weer
+	100, // Notification
+	130. // Stilte
 ];
