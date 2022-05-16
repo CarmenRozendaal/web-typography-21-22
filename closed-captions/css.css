@@ -14,6 +14,7 @@ body {
 	grid-template-rows: 1fr auto 1fr;
 	height:90vh;
 	background-color:#08233b;
+	overflow: hidden;
 }
 
 #closed-captions p {
@@ -21,7 +22,7 @@ body {
     transition: .5s;
     position: absolute;
     text-align: left;
-	bottom: 4em;
+	bottom: 5em;
     width: 99%;
 }
 
@@ -46,7 +47,7 @@ iframe {
 
 /* robotstem */
 .voice1::before {
-    content: "Computer: ";
+    content: "Computer:";
     font-style: "brenner mono";
     color: lightskyblue;
     font-weight: bold;
@@ -61,7 +62,7 @@ iframe {
 
 /* Officer K */
 .voice2::before {
-    content: "Officer K: ";
+    content: "Officer K:";
     font-family: "Brenner Sans";
     color: yellow;
     font-weight: bold;
@@ -70,13 +71,13 @@ iframe {
 .voice2 {
     font-family: "Brenner Sans";
 	font-weight: normal;
-    font-size: 1.2em;
+    font-size: 1em;
     color: white;
 }
 
 /* Stranger */
 .voice3::before {
-	content: "Stranger: ";
+	content: "Stranger:";
 	font-family:"Brenner Sans Condensed";
 	color: red;
 	font-weight: bold;
@@ -85,13 +86,13 @@ iframe {
 .voice3 {
     font-family: "Brenner Sans Condensed";
 	font-weight: normal;
-    font-size: 2em;
+    font-size: 1em;
     color: white;
 }
 
 /* Collega */
 .voice4::before {
-    content:"Colleague: ";
+    content:"Colleague:";
     font-family:"Brenner Sans";
     color: green;
     font-weight: bold;
@@ -100,12 +101,37 @@ iframe {
 .voice4 {
     font-family:"Brenner Sans";
     font-weight: normal ;
-    font-size: 1.2em;
+    font-size: 1em;
     color: white;
 }
 
 
 /* achtergrond effect begin */
+
+.sound0::before {
+	content: "[ Shady music plays ]";
+	position: absolute;
+	text-align: center;	
+	bottom: 5em;
+	color: yellow;
+	font-size: 2em;
+	transition: .5s;
+	animation:verdwijnTekst0 2s 0s forwards;
+}
+
+@keyframes verdwijnTekst0 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
 
 .sound0 #neonlights {
 	background-color:#08233b;
@@ -246,17 +272,48 @@ iframe {
 
 /* alarm toon */
 .sound1::before {
-	content: "ALARM ⚠️";
+	content: "ALARM";
 	position: absolute;
 	text-align: center;	
 	top: 1.5em;
 	color: yellow;
 	font-size: 2em;
 	transition: .5s;
+	animation:verdwijnTekst1 2s 0s forwards;
+}
+
+@keyframes verdwijnTekst1 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
+@keyframes verdwijnAchtergrond1 {
+
+	0% {
+		background-color: #08233b;
+	}
+
+	50% {
+		background-color: darkred;
+	}
+
+	100% {
+		background-color: #08233b;
+	}
 }
 
 .sound1 {
-	background-color:darkred;
+	animation:verdwijnAchtergrond1 2s 0s forwards;
 }
 
 .sound1 iframe {
@@ -278,21 +335,39 @@ iframe {
 }
 
  .sound2::before{
-	content: "SIRENE 🚨";
+	content: "[ SIRENE 🚨 ]";
 	position: absolute;
 	text-align: center;	
 	top: 1.5em;
 	color: white;
 	font-size: 2em;
 	transition: .5s;
+	animation:verdwijnTekst2 2s 0s forwards;
 }
 
+@keyframes verdwijnTekst2 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
 .sound2 {
-	background-color:#08233b;
 	animation: Sirenelicht 1s linear;
 }
 
 @keyframes Sirenelicht {
+	0% {
+		background-color: #08233b;
+	}
     10% {
         background-color: red;
     }
@@ -304,31 +379,81 @@ iframe {
     90% {
         background-color: red;
     }
+	100% {
+		background-color: #08233b;
+	}
 }
 
 
 .sound3::before {
-	content: "ALARM ⚠️";
+	content: "[ ALARM ⚠️ ]";
 	position: absolute;	
 	top: 1.5em;
 	color: yellow;
 	font-size: 2em;
 	transition: .5s;
+	animation:verdwijnTekst3 2s 0s forwards;
 }
 
+@keyframes verdwijnTekst3 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes verdwijnAchtergrond3 {
+
+	0% {
+		background-color: #08233b;
+	}
+
+	50% {
+		background-color: darkred;
+	}
+
+	100% {
+		background-color: #08233b;
+	}
+}
+
+
 .sound3 {
-	background-color:darkred;
+	animation:verdwijnAchtergrond3 2s 0s forwards;
 }
 
 .sound4::before {
 	content: "🗣";
 	position: absolute;
     text-align: center;	
-	top: 2em;
+	top: 1.5em;
 	color: red;
-	font-size: 3em;
+	font-size: 2em;
 	transition: .5s;
+	animation:verdwijnTekst4 2s 0s forwards;
 }
+
+@keyframes verdwijnTekst4 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
 
 .sound4 {
 	background-color: black;
@@ -368,7 +493,6 @@ iframe {
 	color: yellow;
 	font-size: 2em;
 	transition: .5s;
-	border: none;
 }
 
 .sound5 {
@@ -376,14 +500,13 @@ iframe {
 }
 
 .sound6:before {
-	content: "ALARM again ⚠️⚠️⚠️";
+	content: "[ ALARM again ⚠️⚠️⚠️ ]";
 	position: absolute;	
 	top: 1.5em;
     text-align: center;	
 	color: yellow;
 	font-size: 2em;
 	transition: .5s;
-	border: none;
 }
 
 .sound6 {
