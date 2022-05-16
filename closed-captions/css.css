@@ -39,8 +39,8 @@ body {
 iframe {
 	grid-column-start: 3;
 	grid-row-start:2;
-	height: 40vh;
-	width: 110vh;
+	width: 860px;
+	height: 280px;
 }
 
 /* styling van de stemmen */
@@ -116,7 +116,7 @@ iframe {
 	color: yellow;
 	font-size: 2em;
 	transition: .5s;
-	animation:verdwijnTekst0 2s 0s forwards;
+	animation:verdwijnTekst0 4s 0s forwards;
 }
 
 @keyframes verdwijnTekst0 {
@@ -163,7 +163,7 @@ iframe {
   }
 
   .sound0 #neonlights div:nth-of-type(1) {
-  animation:movinglightPink 2.2s 0s forwards 2;
+  animation:movinglightPink 2.4s 0s forwards 2;
   }
 
   .sound0 #neonlights div:nth-of-type(2) {
@@ -189,8 +189,8 @@ iframe {
 }
 
 .sound0 #neonlights div:nth-of-type(2) {
-	animation:movinglightGreen 2.2s 0s forwards 2;
-	}
+	animation:movinglightGreen 2.4s 0s forwards 2;
+}
 
 
 /* tekst 1 voor 1 opnoemen */
@@ -266,13 +266,13 @@ iframe {
     transition: 0s 3.7s;
     font-family: "brenner mono bold";
 	font-size: 1.2em;
-	color:rgb(47, 230, 135);
+	color:rgb(157, 33, 229);
 }
 
 
 /* alarm toon */
 .sound1::before {
-	content: "ALARM";
+	content: "[ ALARM ] ";
 	position: absolute;
 	text-align: center;	
 	top: 1.5em;
@@ -409,6 +409,10 @@ iframe {
 	}
 }
 
+.sound3 {
+	animation:verdwijnAchtergrond3 2s 0s forwards;
+}
+
 @keyframes verdwijnAchtergrond3 {
 
 	0% {
@@ -424,10 +428,6 @@ iframe {
 	}
 }
 
-
-.sound3 {
-	animation:verdwijnAchtergrond3 2s 0s forwards;
-}
 
 .sound4::before {
 	content: "🗣";
@@ -454,9 +454,119 @@ iframe {
 	}
 }
 
+@keyframes verdwijnAchtergrond4 {
+
+	0% {
+		background-color: #08233b;
+	}
+
+	50% {
+		background-color: black;
+	}
+
+	100% {
+		background-color: #08233b;
+	}
+}
+
 
 .sound4 {
-	background-color: black;
+	animation:verdwijnAchtergrond4 2s 0s forwards;
+}
+
+
+
+.sound5::before {
+	content: "[ ALARM again ⚠️⚠️ ]";
+	position: absolute;	
+	top: 1.5em;
+    text-align: center;
+	color: yellow;
+	font-size: 2em;
+	transition: .5s;
+	animation:verdwijnTekst5 2s 0s forwards;
+}
+
+@keyframes verdwijnTekst5 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
+@keyframes verdwijnAchtergrond5 {
+
+	0% {
+		background-color: #08233b;
+	}
+
+	50% {
+		background-color: black;
+	}
+
+	100% {
+		background-color: #08233b;
+	}
+}
+
+
+.sound5 {
+	animation:verdwijnAchtergrond5 2s 0s forwards;
+}
+
+
+
+.sound6:before {
+	content: "[ ALARM again ⚠️⚠️⚠️ ]";
+	position: absolute;	
+	top: 1.5em;
+    text-align: center;	
+	color: yellow;
+	font-size: 2em;
+	transition: .5s;
+	animation:verdwijnTekst6 2s 0s forwards;
+}
+
+@keyframes verdwijnTekst6 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes verdwijnAchtergrond6 {
+
+	0% {
+		background-color: #08233b;
+	}
+
+	50% {
+		background-color: darkred;
+	}
+
+	100% {
+		background-color: #08233b;
+	}
+}
+
+
+.sound6 {
+	animation:verdwijnAchtergrond6 2s 0s forwards;
 }
 
 @keyframes shake{
@@ -484,50 +594,61 @@ iframe {
 	animation: shake .8s ease-in;
 }
 
-
-.sound5::before {
-	content: "ALARM again ⚠️⚠️";
-	position: absolute;	
-	top: 1.5em;
-    text-align: center;
-	color: yellow;
-	font-size: 2em;
-	transition: .5s;
-}
-
-.sound5 {
-	background-color: darkred;
-}
-
-.sound6:before {
-	content: "[ ALARM again ⚠️⚠️⚠️ ]";
-	position: absolute;	
-	top: 1.5em;
-    text-align: center;	
-	color: yellow;
-	font-size: 2em;
-	transition: .5s;
-}
-
-.sound6 {
-	background-color: darkred;
-}
-
-
 .sound7:before {
 	content:"{ Upcoming Peep tone }";
 	transition: .5s;
 	color:orangered;
 	position: absolute;
     text-align: center;	
-	top: 2em;
+	top: 1.5em;
     width: 99%;
-	border:none;
+	animation:verdwijnTekst7 20s 0s forwards;
+}
+
+@keyframes verdwijnTekst7 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes spannend {
+
+	0% {
+		transform: translateX(0);
+		transform: scale(1);
+	}
+
+	25% {
+		transform: translateX(3em);
+	}
+
+	50% {
+		transform: translateX(-3em);
+		transform: scale(1.2);
+	}
+
+	75% {
+		transform: translateX(3em);
+	}
+
+	100% {
+		transform: translateX(0em);
+		transform: scale(1);
+	}
 }
 
 .sound7 {
-	background-color: #08233b;
+	animation:spannend 36s 0s linear;
 }
+
 
 
 
