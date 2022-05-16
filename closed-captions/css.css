@@ -80,7 +80,7 @@ iframe {
 .voice3::before {
 	content: "Stranger: ";
 	font-family:"Brenner Sans Condensed";
-	color: red;
+	color: darkred;
 	font-weight: bold;
 }
 
@@ -281,11 +281,11 @@ iframe {
 	color: yellow;
 	font-size: 2em;
 	transition: .5s;
-	animation: verdwijn1 2s 0s forwards;
+	animation:verdwijn1 2s 0s forwards;
 }
 
 .sound1 {
-	animation: verdwijnAchtergrond1 2s 0s forwards;
+	animation:verdwijnAchtergrond1 2s 0s forwards;
 }
 
 
@@ -346,11 +346,11 @@ iframe {
 	color: white;
 	font-size: 2em;
 	transition: .5s;
-	animation: verdwijn2 2s 0s forwards;
+	animation:verdwijn2 2s 0s forwards;
 }
 
 .sound2 {
-	animation: Sirenelicht 1s linear;
+	animation:Sirenelicht 1s linear;
 }
 
 @keyframes Sirenelicht {
@@ -398,7 +398,7 @@ iframe {
 	color: yellow;
 	font-size: 2em;
 	transition: .5s;
-	animation: verdwijn3 2s 0s forwards;
+	animation:verdwijn3 2s 0s forwards;
 }
 
 @keyframes verdwijn3 {
@@ -449,9 +449,9 @@ iframe {
     text-align: center;	
 	top: 1.5em;
 	color: red;
-	font-size: 2.3em;
+	font-size: 2.5em;
 	transition: .5s;
-	animation: verdwijn4 2s 0s forwards;
+	animation:verdwijn4 2s 0s forwards;
 	
 }
 
@@ -484,7 +484,7 @@ iframe {
 }
 
 .sound4 {
-	animation: verdwijnAchtergrond4 2s 0s forwards;
+	animation:verdwijnAchtergrond4 2s 0s forwards;
 }
  
 
@@ -498,8 +498,7 @@ iframe {
 	color: yellow;
 	font-size: 2em;
 	transition: .5s;
-	border: none;
-	animation: verdwijn5 2s 0s forwards;
+	animation:verdwijn5 2s 0s forwards;
 }
 
 @keyframes verdwijn5 {
@@ -521,16 +520,8 @@ iframe {
 		background-color:#021d35;
 	}
 
-	25% {
-		background-color: red;
-	}
-
-	50% {
+	50%{
 		background-color:darkred;
-	}
-
-	75% {
-		background-color: brown;
 	}
 
 	100% {
@@ -540,7 +531,7 @@ iframe {
 
 
 .sound5 {
-	animation: verdwijnAchtergrond5 2s 0s forwards;
+	animation:verdwijnAchtergrond5 2s 0s forwards;
 }
 
 /* Alarm toon 4 */
@@ -553,7 +544,7 @@ iframe {
 	color: yellow;
 	font-size: 2em;
 	transition: .5s;
-	animation: verdwijn6 2s 0s forwards;
+	animation:verdwijn6 2s 0s forwards;
 }
 
 @keyframes verdwijn6 {
@@ -571,7 +562,7 @@ iframe {
 }
 
 .sound6 {
-	animation: verdwijnAchtergrond6 2s 0s forwards;
+	animation:verdwijnAchtergrond6 2s 0s forwards;
 }
 
 @keyframes verdwijnAchergrond6 {
@@ -599,6 +590,21 @@ iframe {
     text-align: center;	
 	top: 1.5em;
     width: 99%;
+	animation:verdwijn7 20s 0s forwards;
+}
+
+@keyframes verdwijn7 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity:0;
+	}
 }
 
 .sound7 , .sound8 iframe {
@@ -629,14 +635,28 @@ iframe {
     text-align: center;	
 	top: 1.5em;
     width: 99%;
+	animation:verdwijn8 50s 0s forwards;
+}
+
+@keyframes verdwijn8 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity:0;
+	}
 }
 
 .sound8 {
-	animation: trilling 20s linear;
-	background-image: url("images/sound_wave.jpeg");
+	animation:trilling 20s linear;
+	background-image: url("https://media.giphy.com/media/F9qCEnzEaYLu0/giphy.gif");
 	background-size: 1500px 300px;
 	background-repeat: none;
-	border:yellow;
 }
 
 
@@ -665,14 +685,14 @@ iframe {
 /* Peep stops */
 
 .sound9:before {
-	content:"{ Higher beep stops }";
+	content:"{ Beep tone stops }";
 	transition: .5s;
 	color:orangered;
 	position: absolute;
     text-align: center;	
 	top: 2em;
     width: 99%;
-	animation: verdwijn9 4s 0s forwards;
+	animation:verdwijn9 4s 0s forwards;
 }
 
 @keyframes verdwijn9 {
@@ -690,7 +710,8 @@ iframe {
 }
 
 .sound9 {
-	background-color: white;
+	background-image:none;
+	background-color: grey;
 }
 
 /* Fragment 2, opkomende piep */
@@ -703,13 +724,7 @@ iframe {
     text-align: center;	
 	top: 2em;
     width: 99%;
-	animation: verdwijn10 50s 0s forwards;
-}
-
-.sound10 {
-	background-image: url("https://media.giphy.com/media/F9qCEnzEaYLu0/giphy.gif");
-	background-size: 1500px 300px;
-	background-repeat: none;
+	animation:verdwijn10 50s 0s forwards;
 }
 
 @keyframes verdwijn10 {
@@ -726,8 +741,42 @@ iframe {
 	}
 }
 
+.sound10 {
+	background-image: url("https://media.giphy.com/media/F9qCEnzEaYLu0/giphy.gif");
+	background-size: 1500px 300px;
+	background-repeat: none;
+}
 
 
+.sound11::before {
+	content:"{ Beep tone stops }";
+	transition: .5s;
+	color:orangered;
+	position: absolute;
+    text-align: center;	
+	top: 2em;
+    width: 99%;
+	animation:verdwijn11 50s 0s forwards;
+}
+
+@keyframes verdwijn11 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity:0;
+	}
+}
+
+.sound11 {
+	background-image:none;
+	background-color:grey;
+}
 
 
 

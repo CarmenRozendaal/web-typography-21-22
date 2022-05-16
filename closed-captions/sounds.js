@@ -3,7 +3,7 @@
 sounds = [
 	0, // beginmuziek
 	9,	// Heavy Alarm
-	12, // High Noice
+	12, // Sirene
 	16, // Low Alarm
 	23, // Stranger talks
 	25, // Low Alarm repeat 2x
@@ -12,6 +12,5 @@ sounds = [
 	40, // Pieptoon wordt hoger
 	75, // Pieptoon stopt
 	90, // Pieptoon start weer
-	100, // Notification
-	130. // Stilte
+	130. // Pieptoon stopt
 ];
