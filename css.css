@@ -1,0 +1,762 @@
+/* **********************************************
+Basic mechanics
+Hide all paragraphs by default
+Show them when they receive the class 'on'
+Hide them when they receive the class 'off'
+Feel free to adjust the defaults to your needs.
+********************************************** */
+
+body {
+	margin: 0;
+	display:grid;
+	justify-items: center;
+	grid-template-columns: 1fr auto 1fr auto 1fr;
+	grid-template-rows: 1fr auto 1fr;
+	height:90vh;
+	background-color:#08233b;
+	overflow: hidden;
+}
+
+#closed-captions p {
+    opacity: 0;
+    transition: .5s;
+    position: absolute;
+    text-align: left;
+	bottom: 5em;
+    width: 99%;
+}
+
+#closed-captions .on {
+    opacity: 1;
+}
+
+#closed-captions .off {
+    transition: .2s;
+    opacity: 0;
+}
+
+
+iframe {
+	grid-column-start: 3;
+	grid-row-start:2;
+	width: 760px;
+	height: 340px;
+}
+
+/* styling van de stemmen */
+
+/* robotstem */
+.voice1::before {
+    content: "Computer:";
+    font-style: "brenner mono";
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+.voice1 {
+    font-family: "brenner mono";
+    font-style: italic;
+    font-size: 1em;
+    color: white;
+}
+
+/* Officer K */
+.voice2::before {
+    content: "Officer K:";
+    font-family: "Brenner Sans";
+    color: yellow;
+    font-weight: bold;
+}
+
+.voice2 {
+    font-family: "Brenner Sans";
+	font-weight: normal;
+    font-size: 1em;
+    color: white;
+}
+
+/* Stranger */
+.voice3::before {
+	content: "Stranger:";
+	font-family:"Brenner Sans Condensed";
+	color: red;
+	font-weight: bold;
+}
+
+.voice3 {
+    font-family: "Brenner Sans Condensed";
+	font-weight: normal;
+    font-size: 1em;
+    color: white;
+}
+
+/* Collega */
+.voice4::before {
+    content:"Colleague:";
+    font-family:"Brenner Sans";
+    color: green;
+    font-weight: bold;
+}
+
+.voice4 {
+    font-family:"Brenner Sans";
+    font-weight: normal ;
+    font-size: 1em;
+    color: white;
+}
+
+
+/* achtergrond effect begin */
+
+.sound0::before {
+	content: "[ Shady music plays ]";
+	position: absolute;
+	text-align: center;	
+	bottom: 5em;
+	color: yellow;
+	font-size: 1.5em;
+	transition: .5s;
+	animation:verdwijnTekst0 4s 0s forwards;
+}
+
+@keyframes verdwijnTekst0 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.sound0 #neonlights {
+	background-color:#08233b;
+	border:none;
+	display: grid;
+	justify-items: center;
+  }
+  
+.sound0 #neonlights div:nth-of-type(1) {
+	width: 30em;
+	height: 2em;
+	border-radius: .5em;
+	background-color: hotpink;
+	position: absolute;
+	top: 2em;
+	left: 0;
+	margin:0em;
+	padding:0;
+  }
+
+  @keyframes movinglightPink {
+	  0% {
+		  transform: translateX(0);
+	  }
+
+	  100% {
+		transform: translateX(300vh);
+	  }
+  }
+
+  .sound0 #neonlights div:nth-of-type(1) {
+  animation:movinglightPink 2.4s 0s forwards 2;
+  }
+
+  .sound0 #neonlights div:nth-of-type(2) {
+	width: 30em;
+	height: 2em;
+	border-radius: .5em;
+	background-color: rgb(47, 230, 135);
+	position: absolute;
+	top: 5em;
+	right: 0;
+	margin:0;
+	padding:0;
+  }
+
+  @keyframes movinglightGreen {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+	  transform: translateX(-300vh);
+	}
+}
+
+.sound0 #neonlights div:nth-of-type(2) {
+	animation:movinglightGreen 2.4s 0s forwards 2;
+}
+
+
+/* tekst 1 voor 1 opnoemen */
+.p0 span {
+    opacity: 0;
+    font-family: "brenner mono light";
+}
+
+.p0.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+}
+
+.p0.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s .4s;
+    margin-right: -.25em;
+}
+
+.p0.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s .5s;
+    margin-right: -.25em;
+}
+
+.p0.on span:nth-of-type(4) {
+    opacity: 1;
+    transition: 0s .7s;
+    margin-right: -.25em;
+}
+
+.p0.on span:nth-of-type(5) {
+    opacity: 1;
+    transition: 0s 1.1s;
+    margin-right: -.25em;
+    font-family: "brenner mono light";
+}
+
+.p0.on span:nth-of-type(6) {
+    opacity: 1;
+    transition: 0s 1.4s;
+    margin-right: -.25em;
+    font-family: "brenner mono light";
+}
+
+.p0.on span:nth-of-type(7) {
+    opacity: 1;
+    transition: 0s 1.7s;
+    margin-right: -.25em;
+    font-family: "brenner mono light";
+}
+
+.p0.on span:nth-of-type(8) {
+    opacity: 1;
+    transition: 0s 2s;
+    font-family: "brenner mono light";
+}
+
+.p0.on span:nth-of-type(9) {
+    opacity: 1;
+    transition: 0s 3s;
+    font-family: "brenner mono light";
+}
+
+.p0.on span:nth-of-type(10) {
+    opacity: 1;
+    transition: 0s 3.2s;
+    font-family: "brenner mono light";
+}
+
+.p0.on span:nth-of-type(11) {
+    opacity: 1;
+    transition: 0s 3.7s;
+    font-family: "brenner mono bold";
+	font-size: 1.2em;
+	color:rgb(10, 166, 104);
+}
+
+
+/* alarm toon */
+.sound1::before {
+	content: "[ ALARM ] ";
+	position: absolute;
+	text-align: center;	
+	top: 1.5em;
+	color: yellow;
+	font-size: 1.5em;
+	transition: .5s;
+	animation:verdwijnTekst1 2s 0s forwards;
+}
+
+@keyframes verdwijnTekst1 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
+@keyframes verdwijnAchtergrond1 {
+	0% {
+		background-color: #08233b;
+	}
+
+	50% {
+		background-color: darkred;
+	}
+
+	100% {
+		background-color: #08233b;
+	}
+}
+
+.sound1 {
+	animation:verdwijnAchtergrond1 2s 0s linear;
+}
+
+.sound1 iframe {
+	animation: zoom 2s 0s forwards ;
+}
+
+@keyframes zoom {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+ .sound2::before{
+	content: "[ SIRENE 🚨 ]";
+	position: absolute;
+	text-align: center;	
+	top: 1.5em;
+	color: white;
+	font-size: 1.5em;
+	transition: .5s;
+	animation:verdwijnTekst2 2s 0s forwards;
+}
+
+@keyframes verdwijnTekst2 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
+.sound2 {
+	animation: Sirenelicht 2s forwards;
+}
+
+@keyframes Sirenelicht {
+	0% {
+		background-color: #08233b;
+	}
+    10% {
+        background-color: red;
+    }
+
+    45% {
+        background-color: blue;
+    }
+
+    90% {
+        background-color: red;
+    }
+	100% {
+		background-color: #08233b;
+	}
+}
+
+
+.sound3::before {
+	content: "[ ALARM ⚠️ ]";
+	position: absolute;	
+	top: 1.5em;
+	color: yellow;
+	font-size: 1.5em;
+	transition: .5s;
+	animation:verdwijnTekst3 2s 0s forwards;
+}
+
+@keyframes verdwijnTekst3 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes verdwijnAchtergrond3 {
+	0% {
+		background-color: #08233b;
+	}
+
+	100% {
+		background-color: darkred;
+	}
+}
+
+.sound3 {
+	animation:verdwijnAchtergrond3 2s 0s linear;
+}
+
+
+.sound4::before {
+	content: "🗣";
+	position: absolute;
+    text-align: center;	
+	top: 1.5em;
+	color: red;
+	font-size: 3em;
+	transition: .5s;
+	animation:verdwijnTekst4 2s 0s forwards;
+}
+
+@keyframes verdwijnTekst4 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes verdwijnAchtergrond4 {
+	0% {
+		background-color: #08233b;
+	}
+
+	50% {
+		background-color: black;
+	}
+
+	100% {
+		background-color: #08233b;
+	}
+}
+
+
+.sound4 {
+	animation:verdwijnAchtergrond4 2s 0s linear;
+}
+
+
+.sound5::before {
+	content: "[ ALARM again ⚠️⚠️ ]";
+	position: absolute;	
+	top: 1.5em;
+    text-align: center;
+	color: yellow;
+	font-size: 1.5em;
+	transition: .5s;
+	animation:verdwijnTekst5 2s 0s forwards;
+}
+
+@keyframes verdwijnTekst5 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
+@keyframes verdwijnAchtergrond5 {
+
+	0% {
+		background-color: #08233b;
+	}
+
+	50% {
+		background-color: black;
+	}
+
+	100% {
+		background-color: #08233b;
+	}
+}
+
+
+.sound5 {
+	animation:verdwijnAchtergrond5 2s 0s linear;
+}
+
+
+
+.sound6:before {
+	content: "[ ALARM again ⚠️⚠️⚠️ ]";
+	position: absolute;	
+	top: 1.5em;
+    text-align: center;	
+	color: yellow;
+	font-size: 1.5em;
+	transition: .5s;
+	animation:verdwijnTekst6 2s 0s forwards;
+}
+
+@keyframes verdwijnTekst6 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes verdwijnAchtergrond6 {
+
+	0% {
+		background-color: #08233b;
+	}
+
+	50% {
+		background-color: darkred;
+	}
+
+	100% {
+		background-color: #08233b;
+	}
+}
+
+
+.sound6 {
+	animation:verdwijnAchtergrond6 2s 0s linear;
+}
+
+@keyframes shake{
+	0% {
+		transform: translate(0);
+	}
+	20%,
+	40%,
+	60%,
+	80%{
+		transform: translate(.9em);
+	}
+	10%,
+	30%,
+	50%{
+		transform: translate(-.2em);
+	}
+	70%,
+	100%{
+		transform: translate(0);
+	}
+}
+
+.sound3 , .sound5 , .sound6 iframe {
+	animation: shake .8s ease-in;
+}
+
+.sound7:before {
+	content:"{ Upcoming Peep tone }";
+	transition: .5s;
+	color:orangered;
+	position: absolute;
+    text-align: center;	
+	font-size: 1.5em;
+	top: 1.5em;
+	animation:verdwijnTekst7 50s 0s forwards;
+}
+
+@keyframes verdwijnTekst7 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes spannend {
+	0% {
+		transform: translateX(0);
+		transform: scale(1);
+	}
+
+	25% {
+		transform: translateX(3em);
+	}
+
+	50% {
+		transform: translateX(-3em);
+		transform: scale(1.2);
+	}
+
+	75% {
+		transform: translateX(3em);
+	}
+
+	100% {
+		transform: translateX(0em);
+		transform: scale(1);
+	}
+}
+
+.sound7 {
+	animation:spannend 50s 0s linear;
+}
+
+.sound8:before {
+	content:"{ Beep tone stops }";
+	transition: .5s;
+	color:orangered;
+	position: absolute;
+    text-align: center;	
+	font-size: 1.5em;
+	top: 1.5em;
+	animation:verdwijnTekst8 2s 0s forwards;
+}
+
+@keyframes verdwijnTekst8 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes verdwijnAchtergrond8 {
+
+	0% {
+		background-color: #08233b;
+	}
+
+	50% {
+		background-color: lightblue;
+	}
+
+	100% {
+		background-color: #08233b;
+	}
+}
+
+
+.sound8 {
+	animation:verdwijnAchtergrond8 2s 0s linear;
+}
+
+
+.sound9:before {
+	content:"{ Notification }";
+	transition: .5s;
+	color:orangered;
+	position: absolute;
+    text-align: center;	
+	font-size: 1.5em;
+	top: 1.5em;
+	animation:verdwijnTekst9 2s 0s forwards;
+}
+
+@keyframes verdwijnTekst9 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.sound10:before {
+	content:"{ Beep tone stops }";
+	transition: .5s;
+	color:orangered;
+	position: absolute;
+    text-align: center;	
+	font-size: 1.5em;
+	top: 1.5em;
+	animation:verdwijnTekst10 2s 0s forwards;
+}
+
+@keyframes verdwijnTekst10 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes verdwijnAchtergrond10 {
+
+	0% {
+		background-color: #08233b;
+	}
+
+	50% {
+		background-color: lightblue;
+	}
+
+	100% {
+		background-color: #08233b;
+	}
+}
+
+
+.sound10 {
+	animation:verdwijnAchtergrond10 2s 0s linear;
+}
+
+
+
+
+
