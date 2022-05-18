@@ -23,8 +23,8 @@ body {
     transition: .5s;
     position: absolute;
     text-align: left;
-	bottom: 5em;
-    width: 99%;
+	bottom: 7em;
+    /* width: 99%; */
 }
 
 #closed-captions .on {
@@ -50,13 +50,13 @@ iframe {
 /* robotstem */
 .voice1::before {
     content: "Computer: ";
-    font-style: "brenner mono";
+    font-style: "Brenner Mono";
     color: lightskyblue;
     font-weight: bold;
 }
 
 .voice1 {
-    font-family: "brenner mono";
+    font-family: "Brenner Mono";
     font-style: italic;
     font-size: 1em;
     color: white;
@@ -104,13 +104,13 @@ iframe {
     font-family:"Brenner Sans";
     font-weight: normal ;
     font-size: 1em;
-    color: black;
+    color: white;
 }
 
 
 /* achtergrond effect begin */
 .sound0::before {
-	content: "[ Shady music ]";
+	content: "[ Shady music plays ]";
 	position: absolute;
 	text-align: center;	
 	bottom: 4em;
@@ -278,7 +278,7 @@ iframe {
 	content: "[ ALARM ]";
 	position: absolute;
 	text-align: center;	
-	top: 1.5em;
+	top: 1.8em;
 	color: yellow;
 	font-size: 2em;
 	transition: .5s;
@@ -343,7 +343,7 @@ iframe {
 	content: "[ SIRENE 🚨 ]";
 	position: absolute;
 	text-align: center;	
-	top: 1.5em;
+	top: 1.8em;
 	color: white;
 	font-size: 2em;
 	transition: .5s;
@@ -395,7 +395,7 @@ iframe {
 .sound3::before {
 	content: "[ ALARM ⚠️ ]";
 	position: absolute;	
-	top: 1.5em;
+	top: 1.8em;
 	color: yellow;
 	font-size: 2em;
 	transition: .5s;
@@ -469,9 +469,9 @@ iframe {
     text-align: center;	
 	top: 1.5em;
 	color: red;
-	font-size: 3.5em;
+	font-size: 3em;
 	transition: .5s;
-	animation:verdwijn4 2s 0s forwards;
+	animation:verdwijn4 3s 0s forwards;
 	
 }
 
@@ -513,7 +513,7 @@ iframe {
 .sound5::before {
 	content: "[ ALARM again ⚠️⚠️ ]";
 	position: absolute;	
-	top: 1.5em;
+	top: 1.8em;
     text-align: center;
 	color: yellow;
 	font-size: 2em;
@@ -558,7 +558,7 @@ iframe {
 .sound6:before {
 	content: "[ ALARM again ⚠️⚠️⚠️ ]";
 	position: absolute;	
-	top: 1.5em;
+	top: 1.8em;
     text-align: center;	
 	color: yellow;
 	font-size: 2em;
@@ -607,8 +607,8 @@ iframe {
 	color:white;
 	position: absolute;
     text-align: center;	
-	top: 1.5em;
-    width: 99%;
+	top: 1.8em;
+	font-size: 2em;
 	animation:verdwijn7 20s 0s forwards;
 }
 
@@ -649,11 +649,11 @@ iframe {
 .sound8:before {
 	content:"{ Higher beep tone }";
 	transition: .5s;
+	font-size: 2em;
 	color:white;
 	position: absolute;
     text-align: center;	
-	top: 1.5em;
-    width: 99%;
+	top: 1.8em;
 	animation:verdwijn8 50s 0s forwards;
 }
 
@@ -672,10 +672,10 @@ iframe {
 }
 
 .sound8 {
-	animation:trilling 20s linear;
+	animation:trilling 30s linear;
 	background-image: url("https://media.giphy.com/media/F9qCEnzEaYLu0/giphy.gif");
-	background-size: 1500px 300px;
-	background-repeat: none;
+	background-size: 1500px 900px;
+	background-repeat: no-repeat;
 }
 
 
@@ -706,12 +706,12 @@ iframe {
 .sound9:before {
 	content:"{ Beep tone stops }";
 	transition: .5s;
+	font-size: 2em;
 	color:black;
 	position: absolute;
     text-align: center;	
-	top: 2em;
-    width: 99%;
-	animation:verdwijn9 5s 0s forwards;
+	top: 1,8em;
+	animation:verdwijn9 3s 0s forwards;
 }
 
 @keyframes verdwijn9 {
@@ -730,10 +730,9 @@ iframe {
 
 .sound9 {
 	background-image:none;
-	animation:verdwijnAchtergrond9 5s ease-in-out 0s 1;
+	animation:verdwijnAchtergrond9 2s ease-in 0s 1;
 }
 
- /* Deze aanpasssen, video abrupt op wit laten gaan */
 @keyframes verdwijnAchtergrond9 {
 	0% {
 		background-color:#061929;
@@ -754,12 +753,12 @@ iframe {
 .sound10::before {
 	content:"{ Upcoming beep tone }";
 	transition: .5s;
-	color:orangered;
+	font-size: 2em;
+	color:white;
 	position: absolute;
     text-align: center;	
-	top: 2em;
-    width: 99%;
-	animation:verdwijn10 55s 0s forwards;
+	top: 1.8em;
+	animation:verdwijn10 70s 0s forwards;
 }
 
 @keyframes verdwijn10 {
@@ -777,24 +776,49 @@ iframe {
 }
 
 .sound10 {
-	background-image: url("https://media.giphy.com/media/F9qCEnzEaYLu0/giphy.gif");
-	background-size: 1500px 300px;
-	background-repeat: none;
+	background-image: url("https://media4.giphy.com/media/WKwlsmGfckMbrhnzkR/giphy.gif?cid=ecf05e47sl8a8xdq4h7jlzvcekgtism2npcrpo5vphnwy5kw&rid=giphy.gif&ct=g");
+	background-size: 1500px 900px;
+	background-repeat: no-repeat;
 }
 
-
 .sound11::before {
-	content:"{ Beep tone stops }";
+		content:"{ Long pause }";
+		transition: .5s;
+		font-size: 2em;
+		color:white;
+		position: absolute;
+		text-align: center;	
+		top: 1.8em;
+		animation:verdwijn11 3s 0s forwards;
+	}
+
+	@keyframes verdwijn11 {
+		0% {
+			opacity: 0;
+		}
+	
+		50% {
+			opacity: 1;
+		}
+	
+		100% {
+			opacity:0;
+		}
+	}
+
+
+.sound12::before {
+	content:"{ Silence }";
 	transition: .5s;
+	font-size: 2em;
 	color:black;
 	position: absolute;
     text-align: center;	
-	top: 2em;
-    width: 99%;
-	animation:verdwijn11 15s 0s forwards;
+	top: 1.8em;
+	animation:verdwijn12 4s 0s forwards;
 }
 
-@keyframes verdwijn11 {
+@keyframes verdwijn12 {
 	0% {
 		opacity: 0;
 	}
@@ -808,15 +832,24 @@ iframe {
 	}
 }
 
-.sound11 { /* Hier nog een andere gif nog voor vinden, toon is anders */
-	background-image: url("https://media.giphy.com/media/F9qCEnzEaYLu0/giphy.gif"); 
-	background-size: 1500px 300px;
-	background-repeat: none;
+@keyframes verdwijnAchtergrond12 {
+	0% {
+		background-color:#061929;
+	}
+
+	99% {
+		background-color:white;
+	}
+
+	100% {
+		background-color:#061929;
+	}
 }
 
 .sound12 {
+	animation:verdwijnAchtergrond12 2s ease-in-out 0s 1;
 	background-image:none;
-	background-color:grey;
+	background-color:#061929;
 }
 
 

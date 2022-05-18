@@ -11,7 +11,7 @@ sounds = [
 	33, // Pieptoon begint
 	40, // Pieptoon wordt hoger
 	75, // Pieptoon stopt
-	90, // Pieptoon start weer
-	125, // Pieptoon stopt
-	133. // Stilte
+	88, // Pieptoon start weer
+	100, // Long Pause
+	130. // Pieptoon stopt
 ];

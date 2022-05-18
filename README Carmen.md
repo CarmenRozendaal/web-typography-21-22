@@ -53,10 +53,16 @@ Ook ga ik de belangrijke geluiden, die essentieel zijn in de film, visueel maken
 
   - Aan het begin van de video zie je neonlichten in de stad, wat karakter geeft aan de omgeving waarin de personage zich bevind. Daarom heb ik besloten deze extra uit te lichten en ze ook op de achtergrond als soort lazerstralen te tonen. Dit geeft het ook een spannend effect en vond ik passend bij het 'space geluid' wat je hoorde.
 
-  <img src="neonlights.png" width="375px" alt="screenshot neonlights">
+  <img src="readme-images/neonlights.png" width="375px" alt="neonlights effect">
 
+  - Dit heb ik ook bij de sirene gedaan die je hoort. De lichten daarvan heb ik op de achtergrond geprojecteerd en ook zie je het icoon van een sirene verschijnen.
 
-  - Vervolgens heb ik bij het horen van een alarm, een rode gradient gebruikt als achtergrond en springt het beeld naar voren. Ook zie je het woord [ Alarm ] , deze heb ik binnen haakjes gezet zodat de kijken ziet dat het om een geluid gaat.
+  <img src="readme-images/Sirene.png" width="375px" alt="sirene effect">
+
+  - Vervolgens heb ik bij het horen van een alarm, een rode gradient gebruikt als achtergrond en springt het beeld naar voren. Ook zie je het woord [ Alarm ] , deze heb ik binnen haakjes gezet zodat de kijker ziet dat het om een geluid gaat.
+  Wanneer een alarm heftiger wordt heb ik daar een icoon aan toegevoegd, dit benadrukt de ernst van het geluid. 
+
+  <img src="readme-images/AlarmAgainX3.png" width="375px" alt="alarm effect">
 
 
 </details>
@@ -114,8 +120,7 @@ Ook ga ik de belangrijke geluiden, die essentieel zijn in de film, visueel maken
 
 <details>
 
-1. bron 1: 
-2. bron 2: 
-3. bron 3:
+1. bron 1: https://giphy.com (gif achtergrond 1)
+2. bron 2: https://media.giphy.com (gif achtergrond 2)
 
 </details>
