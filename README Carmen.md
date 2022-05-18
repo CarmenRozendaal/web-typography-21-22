@@ -30,7 +30,7 @@ De elementen uit de omgeving van de film, ook laten zien op de achtergrond van h
 ## Voortgang - Week 1
 
 <details Open>
-  <summary>**Opstartface**</summary>
+  <summary>
   De start van de opdracht ging een beetje moeizaam, ik vond het lastig om te bepalen in wat voor soort stijl ik de geluidselementen wilden vormgeven. Ook had ik nog niet precies voor ogen welke geluiden er precies waren of waar ik me nou op wilde focussen.
   
   Ik ben daarom als 1e begonnen met het stijlen van de voices, dit waren er 4: Een robotstem, Agent K, een voorbijganger en een collega. Ik heb hiervoor het Brenner-Font goed kunnen inzetten.
@@ -41,11 +41,12 @@ De elementen uit de omgeving van de film, ook laten zien op de achtergrond van h
 
   Bij het stijlen van de voices wilde ik de kijker laten weten wie wat zegt. Daarom heb ik ook de naam van de spreker toegevoegd aan de tekstregel. (Voorbeeld, Agent K: *Yes sir*).
 
-  Vervolgens ben ik gaan kijken naar de geluidseffecten in de video, en heb ik die voor mezelf in een overzicht gezet, en ingedeelt op de juiste tijd. 
+  Vervolgens ben ik gaan kijken naar de geluidseffecten in de video, en heb ik die voor mezelf in een overzicht gezet, en ingedeelt op de juiste tijd.
+  </summary> 
 </details>
 
 <details>
-  <summary>**Vormgevingskeuze**</summary>
+  <summary>Vormgevingskeuze</summary>
   
   - Voor de achtergrond heb ik gekozen voor donkerblauw. Ik ben niet voor zwart gegaan, aangezien het dan te donker zou worden. Het fragment zelf was ook al vrij donker, en ik wilde wel dat de kijker het nog kon zien. 
 
@@ -72,7 +73,7 @@ De elementen uit de omgeving van de film, ook laten zien op de achtergrond van h
 ## Voortgang - Week 2
 
 <details open>
-  <summary>**Vervolg vormgevingkeuze**</summary>
+  <summary>
   In de 2e week ben ik verder gegaan met de geluiden. Zo heb ik me gefocust op de pieptoon, die uiteindelijk te horen is wanneer Agent K de test moet afnemen. Deze piep is erg doordringend en wordt naarmate de video hoger, tegelijkertijd is er ook een soort ruis. Ik heb er daarom voor gekozen om op de achtergrond een effect te tonen van een ruisend tv scherm. Dit is erg storend wanneer je hier lang naar kijkt. Daarnaast krijgt de video een trillend effect en wordt en langzaam op de video ingezoomd. Dit is ook wat er daadwerkelijk in de video gebeurt, en zo wordt het extra benadrukt. Dit zorgt ook voor dat extra spannende gevoel.
   
   <img src="readme-images/HogePiep.png" width="375px" alt="Hoge piep effect">
@@ -87,14 +88,14 @@ De elementen uit de omgeving van de film, ook laten zien op de achtergrond van h
   Wanneer de test is afgelopen volgt er een stilte, wat een beetje dramatisch klinkt. De drukke achtergrond valt weg en er is een leeg wit beeld te zien waarop staat { Silence }. Dit is waar de film op eindigt.
 
   <img src="readme-images/Einde.png" width="375px" alt="stilte op einde">
-
+  </summary>
 </details>
 
 
 ## Reflectie
 
 <details open>
-  <summary>**Persoonlijke ontwikkeling**</summary>
+  <summary>
   De opdracht is klaar en ben blij dat het erop zit. Ik vond het namelijk een lastige opdracht, maar ik ben ook wel tevreden met het eindresultaat.
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -110,6 +111,7 @@ De elementen uit de omgeving van de film, ook laten zien op de achtergrond van h
   ### Dit was lastig/Is niet gelukt:
   Het werken met Github-Desktop ging niet zo goed. Hij kon steeds de koppeling met mijn bestand niet maken waardoor ik mijn wijzigen niet kon opslaan. Dit leidde uiteindelijk ook tot een crash in de app, waardoor mijn werk deels weg was. Ik baalde hier erg van, aangezien ik bijna klaar was met de opdracht. Ik moest dus weer opnieuw beginnen. Gelukkig is dit uiteindelijk goedgekomen, maar ik heb nu wel minder vertrouwen in Github. 
 
+</summary>
 </details>
 
 
