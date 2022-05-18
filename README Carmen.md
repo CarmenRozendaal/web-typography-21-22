@@ -29,7 +29,7 @@ De elementen uit de omgeving van de film, ook laten zien op de achtergrond van h
 
 ## Voortgang - Week 1
 
-<details Open>
+<details open>
   <summary>
   De start van de opdracht ging een beetje moeizaam, ik vond het lastig om te bepalen in wat voor soort stijl ik de geluidselementen wilden vormgeven. Ook had ik nog niet precies voor ogen welke geluiden er precies waren of waar ik me nou op wilde focussen.
   
@@ -45,7 +45,7 @@ De elementen uit de omgeving van de film, ook laten zien op de achtergrond van h
   </summary> 
 </details>
 
-<details>
+<details open>
   <summary>VORMGEVINGSKEUZE</summary>
   
   - Voor de achtergrond heb ik gekozen voor donkerblauw. Ik ben niet voor zwart gegaan, aangezien het dan te donker zou worden. Het fragment zelf was ook al vrij donker, en ik wilde wel dat de kijker het nog kon zien. 
@@ -113,7 +113,6 @@ De elementen uit de omgeving van de film, ook laten zien op de achtergrond van h
 
 
 ## Bronnenlijst
-<details>
-1. bron 1: https://giphy.com (gif achtergrond Piep 1)
-2. bron 2: https://media.giphy.com (gif achtergrond Piep 2)
+<details open>
+bron 1: https://giphy.com (gif achtergrond Piep 1 en Piep 2)s
 </details>

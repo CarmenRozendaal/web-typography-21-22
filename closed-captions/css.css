@@ -13,7 +13,6 @@ body {
 	grid-template-columns: 1fr auto 1fr auto 1fr;
 	grid-template-rows: 1fr auto 1fr;
 	height:90vh;
-	/* background-image:linear-gradient(#061929,black,#061929); */
 	background-color:#061929;
 	overflow: hidden;
 }
@@ -24,7 +23,6 @@ body {
     position: absolute;
     text-align: left;
 	bottom: 7em;
-    /* width: 99%; */
 }
 
 #closed-captions .on {
@@ -781,6 +779,7 @@ iframe {
 	background-repeat: no-repeat;
 }
 
+/* pauze tussendoor */
 .sound11::before {
 		content:"{ Long pause }";
 		transition: .5s;
@@ -806,7 +805,7 @@ iframe {
 		}
 	}
 
-
+/* stilte, einde fragment */
 .sound12::before {
 	content:"{ Silence }";
 	transition: .5s;
