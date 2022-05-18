@@ -46,7 +46,7 @@ De elementen uit de omgeving van de film, ook laten zien op de achtergrond van h
 </details>
 
 <details>
-  <summary>Vormgevingskeuze</summary>
+  <summary>VORMGEVINGSKEUZE</summary>
   
   - Voor de achtergrond heb ik gekozen voor donkerblauw. Ik ben niet voor zwart gegaan, aangezien het dan te donker zou worden. Het fragment zelf was ook al vrij donker, en ik wilde wel dat de kijker het nog kon zien. 
 
@@ -95,8 +95,7 @@ De elementen uit de omgeving van de film, ook laten zien op de achtergrond van h
 ## Reflectie
 
 <details open>
-  <summary>
-  De opdracht is klaar en ben blij dat het erop zit. Ik vond het namelijk een lastige opdracht, maar ik ben ook wel tevreden met het eindresultaat.
+  <summary>PERSOONLIJKE ONTWIKKELING</summary>
 
   ### Dit ging goed/Heb ik geleerd: 
   - Het schrijven van code ging een stuk gemakkelijker, doordat ik het vak Interface & Interactie hiervoor had.
@@ -110,8 +109,6 @@ De elementen uit de omgeving van de film, ook laten zien op de achtergrond van h
 
   ### Dit was lastig/Is niet gelukt:
   Het werken met Github-Desktop ging niet zo goed. Hij kon steeds de koppeling met mijn bestand niet maken waardoor ik mijn wijzigen niet kon opslaan. Dit leidde uiteindelijk ook tot een crash in de app, waardoor mijn werk deels weg was. Ik baalde hier erg van, aangezien ik bijna klaar was met de opdracht. Ik moest dus weer opnieuw beginnen. Gelukkig is dit uiteindelijk goedgekomen, maar ik heb nu wel minder vertrouwen in Github. 
-
-</summary>
 </details>
 
 
